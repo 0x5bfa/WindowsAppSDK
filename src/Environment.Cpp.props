@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE-CODE in the project root for license information. -->
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
 <Project InitialTargets="ErrorIfIncluded" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
   <PropertyGroup Condition="$(WindowsAppSDKFinalRelease) != 'true'">
-    <!-- If WindowsAppSDKPrelease is unset, default it to false. -->
     <WindowsAppSDKFinalRelease>false</WindowsAppSDKFinalRelease>
   </PropertyGroup>
   <PropertyGroup Condition="$(UseInsiderSDK) == 'true'">
@@ -11,6 +11,7 @@
   <PropertyGroup Condition="$(UseInternalSDK) == 'true'">
     <DefineConstants>$(DefineConstants);USE_INTERNAL_SDK</DefineConstants>
   </PropertyGroup>
+
   <ItemDefinitionGroup Condition="$(WindowsAppSDKFinalRelease) == 'false'">
     <ClCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWSAPPSDK_PRERELEASE</PreprocessorDefinitions>
@@ -27,4 +28,5 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);USE_INSIDER_SDK</PreprocessorDefinitions>
     </Midl>
   </ItemDefinitionGroup>
+
 </Project>
