@@ -10,3 +10,7 @@
 *proj text eol=crlf
 *.cmd text eol=crlf
 *.ps1 text eol=crlf
+
+# Ignore specific files from linguistic stats
+*.ps1 linguist-vendored
+*.cmd linguist-vendored
