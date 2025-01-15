@@ -1,13 +1,14 @@
-# Windows App SDK Coding Guidelines
+<h1 align="center">Contributing Guidelines</h1>
 
-The Windows App SDK prefers using industry-standard coding styles, guidelines, and patterns for any
+> [!IMPORTANT]
+> The Windows App SDK prefers using industry-standard coding styles, guidelines, and patterns for any
 languages used in implementation or testing.
 
-# Don't Panic!
+# Getting started
 
-[Getting Started](Coding-Guidelines/GettingStarted.md)
+- [Getting Started](Coding-Guidelines/GettingStarted.md)
 
-# Coding Guidelines and Policies
+# Guidelines and Policies
 
 - Git
   - [Checkin-to-main/develop Policy](Coding-Guidelines/GitCheckinToMainPolicy.md)
