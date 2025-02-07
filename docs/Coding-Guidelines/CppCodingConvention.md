@@ -1,15 +1,10 @@
-# C++
+# C++ coding convenion
 
-**DO** implement types using C++ and [C++/WinRT](https://github.com/microsoft/cppwinrt)
-
-**DO** follow the [CppCoreGudelines](https://github.com/isocpp/CppCoreGuidelines) for all new code.
-
-**DO** enable `/W4 /Wx` for all new code.
-
-**CONSIDER** using the [Windows Implementation Library](https://github.com/Microsoft/wil) for
-Windows-specific helpers rather than creating your own.
-
-**DO** use 4-space indentation instead of tab characters.
+- **DO** implement types using C++ and [C++/WinRT](https://github.com/microsoft/cppwinrt)
+- **DO** follow the [CppCoreGudelines](https://github.com/isocpp/CppCoreGuidelines) for all new code.
+- **DO** enable `/W4 /Wx` for all new code.
+- **CONSIDER** using the [WIL](https://github.com/Microsoft/wil) for Windows-specific helpers rather than creating your own.
+- **DO** use 4-space indentation instead of tab characters.
 
 ## Catching C++/WinRT Exceptions and HRESULT
 
@@ -17,7 +12,7 @@ Exceptions should not be used for standard flow control.
 
 When a catch clause is required, note that `winrt::hresult_error` does not also catch
 `std::bad_alloc` or any of the other C++ standard exceptions. In cases where a single catch handler
-desires to pull out an HRESULT, use the following:
+desires to pull out an `HRESULT`, use the following:
 
 ```c++
 // For code using C++/WinRT
@@ -29,7 +24,8 @@ catch (...)
     // hr contains the WinRT exception or best-guess conversion from a C++ exception,
     // message contains the best-guess textual format of that exception
 }
-
+```
+```c++
 // For code using WIL
 catch (...)
 {
