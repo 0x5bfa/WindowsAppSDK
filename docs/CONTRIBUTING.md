@@ -12,17 +12,35 @@ We welcome your input and contributions to all aspects of Windows App SDK:
 - Fix bugs
 - Develop new features
 
-## Triage process
+## Triage issues/PRs
 
 The team manages issues and PRs using a process we call
 "triage". It helps us keep issues organized to make sure all issues have one or more area owners (as in area-AppContainer, area-Win32, etc), and focuses the attention of the different
-groups that work in the project. New issues are automatically labeled `needs-triage`.
+groups that work in the project. New issues are automatically labeled `needs-triage`. If issue/PR author needs to provide more info, we add `needs-author-feedback` and after a few days past with no activity, we add `status-no-recent-activity`. 10 days after then with no activity, we close it.
 
+## Proposal review flow
 
+```mermaid
+graph LR;
+    NewProposal["Propose new feature"]
+    GoToBacklog["Go to backlog/freezer"]
+    CloseProposal["Close proposal"]
+    UnderDiscussion["Start discussing"]
+    SpecInProgress["Start outlining spec"]
+    UnderDev["Start developing"]
+    Complete["Complete"]
 
-## Proposal review workflow
+NewProposal-->UnderDiscussion
+NewProposal-->CloseProposal
+UnderDev-->Complete
+Approved<-->GoToBacklog
+GoToBacklog-->CloseProposal
 
-
+subgraph Approved["Approved"]
+    UnderDiscussion-->SpecInProgress
+    SpecInProgress-->UnderDev
+end
+```
 
 ## Report security issues
 
