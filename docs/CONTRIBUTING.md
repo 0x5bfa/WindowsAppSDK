@@ -8,8 +8,21 @@ We welcome your input and contributions to all aspects of Windows App SDK:
 - Start discussions
 - Improve docs
 - Improve API specs
+- Report security issues
 - Fix bugs
 - Develop new features
+
+## Triage process
+
+The team manages issues and PRs using a process we call
+"triage". It helps us keep issues organized to make sure all issues have one or more area owners (as in area-AppContainer, area-Win32, etc), and focuses the attention of the different
+groups that work in the project. New issues are automatically labeled `needs-triage`.
+
+
+
+## Proposal review workflow
+
+
 
 ## Report security issues
 

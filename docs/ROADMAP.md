@@ -1,4 +1,4 @@
-# Windows App SDK Roadmap
+# Roadmap
 
 This roadmap frames how the Windows Development Platform team will deliver the Windows App SDK (WinAppSDK) and various technologies contained within, focused on the year ahead. It is intended to be the best entry point to conceptualize what's happening in the WinAppSDK, so you can form plans/strategies around this technology.
 Details of this roadmap may change, and when they do, we'll strive to update the roadmap with the new information in a timely way. We aim to update this roadmap after every major public release (such as 1.4.0) when the details for the next release are ready to share.

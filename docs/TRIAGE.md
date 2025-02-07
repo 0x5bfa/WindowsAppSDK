@@ -1,22 +1,5 @@
 # Issue/Pull Request Management
 
-## Overview
-The Windows App SDK team manages issues and PRs in the repo using a process we call
-"triage". It helps us keep issues organized and focuses the attention of the different
-groups that work in our project.
-
-Our objective is to make sure all issues have one or more owners, an issue type label,
-and one or more area labels. New issues are automatically labeled needs-triage by the msftbot,
-so the triage team only needs to review any issues that have been labeled as `needs-triage`.
-
-## Issue Types
-Each issue should only have one type.
-* bug
-* feature proposal
-* question
-* documentation
-* announcement
-
 ## Triage Labels
 1.	New and re-opened issues are marked with needs-triage.
 2.	Issues with needs-assignee-attention should be investigated by the assignee as 
@@ -25,20 +8,6 @@ top priority.
 
 Because many groups are involved in the Windows App SDK, we have area-... labels to help
 filter issues further for triage.
-
-
-## Area Labels
-Area labels are the labels (create new ones as needed); there can be multiple area labels.
- 
-* area-AppContainer
-* area-Developer tools
-* area-Input injection
-* area-Media
-* area-Packaging
-* area-Projections
-* area-UWP
-* area-Win32
-* area-etc.
 
 ## Triage Process
 

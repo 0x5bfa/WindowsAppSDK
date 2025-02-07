@@ -3,10 +3,6 @@
 The Windows App SDK prefers using industry-standard coding styles, guidelines, and patterns for any
 languages used in implementation or testing.
 
-# Don't Panic!
-
-[Getting Started](Coding-Guidelines/GettingStarted.md)
-
 # Coding Guidelines and Policies
 
 - Git

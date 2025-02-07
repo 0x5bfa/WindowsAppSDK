@@ -1,4 +1,5 @@
-# Frequently Asked Questions
+# FAQ
+
 We will update this page periodically.
 
 > **Note** - Sometimes where this FAQ says "we will" and "can" and "is", we're stating
