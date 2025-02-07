@@ -19,22 +19,23 @@ languages used in implementation or testing.
 
 ## C++ coding convention
 
+Please refer to [C++ coding guidelines](guidelines/CppCodingConvention.md).
 
-## Create an experimental API
+## Develop an experimental feature
 
-
+Please refer to [Experimental API guidelines](guidelines/Experimental.md) and [TerminalVelocity guidelines](guidelines/TerminalVelocity.md).
 
 ## HybridCRT
 
-
+Please refer to [HybridCRT guidelines](guidelines/HybridCRT.md).
 
 ## Self-contained
 
-
+Please refer to [Self-contained guidelines](guidelines/SelfContained.md).
 
 ## WinRT registration
 
-
+Please refer to [WinRT registration guidelines](guidelines/WinRT-Registration.md).
 
 ## Release policy
 
