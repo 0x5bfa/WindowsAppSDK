@@ -12,7 +12,7 @@ and isolation- transparent to your application.  New functionality will share a 
 interface for you to use whether your app is MSIX, MSI, setup.exe, Desktop Bridge, or
 AppContainer.
 
-![New APIs](images/new-apis-image.png)
+<img src="./images/new-apis.png" width="300" alt="New WASDK APIs concept" />
 
 Some of the APIs and functionality listed will come over time; they are listed as
 examples of the category rather than fully supported on day 1.
