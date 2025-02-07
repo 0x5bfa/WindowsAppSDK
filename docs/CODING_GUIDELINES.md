@@ -3,6 +3,36 @@
 The Windows App SDK prefers using industry-standard coding styles, guidelines, and patterns for any
 languages used in implementation or testing.
 
+## Error handling
+
+- **DO** throw exceptions to report exceptional failures.
+- **DO** use [WIL error handling helpers](https://github.com/Microsoft/wil/wiki/Error-handling-helpers) when handling error code failures (`THROW_*()`, `RETURN_*()`, `FAIL_FAST_*()`, `LOG_*()`).
+- **DO** use existing `HRESULT`s if possible. Be careful to pick an existing HRESULT whose symbolic name and message convey the intent and don't mislead the developer, administrator or user.
+- **DO** create new `HRESULT`s with `FACILITY_ITF` **only** when you can't find a reasonable existing one. Any new `FACILITY_ITF` error **must** use code values in the range `0x0200`-`0xFFFF`. See Codes in `FACILITY_ITF` for more details.
+
+## Logging
+
+- **DO** rely on WIL error handling helpers to log failures.
+- **DO** use `TraceLoggingWrite()` to log non-failure information.
+- **DON'T** use WIL's `LOG_HR()` to report non-failure information. `LOG_HR()` will `FAIL_FAST` if handled a `SUCCEEDED(hr)`.
+- **DON'T** define error `HRESULT`s to pass to `LOG_HR()` to report non-failure information. Non-error information should be reported via `TraceLoggingWrite()`.
+
+## Create an experimental API
+
+
+
+## HybridCRT
+
+
+
+## Self-contained
+
+
+
+## WinRT registration
+
+
+
 ## Release policy
 
 ### Preview and Stable (non-Experimental)
@@ -34,22 +64,3 @@ In order to release an API to Experimental, the `main` branch must meet the foll
 - Experimental APIs are tagged as `experimental` (The mechanisms to do so may vary in WinRT APIs, Flat-C APIs, texts, etc)
 - Experimental APIs don't go through full API Review but should be discussed with your local API Review representative. This ensures your API is aligned with API practices and policies and avoids the risk of significant changes required to pass API Review.
 - Has ppropriate test coverage. This is no different than non-Experimental APIs, except meaning of 'appropriate' may vary. For instance, 'skeletal' Experimental APIs don't need the same breadth of test coverage as non-Experimental APIs.
-
-
-
-
-# Coding Guidelines and Policies
-
-
-
-  - [Branches: main vs develop](Coding-Guidelines/develop-branch.md)
-- [Error Handling and Logging](Coding-Guidelines/ErrorHandlingAndLogging.md)
-- [Experimental](Coding-Guidelines/Experimental.md)-only features
-  - Use [TerminalVelocity](Coding-Guidelines/TerminalVelocity.md) tag and disable features
-- [Hybrid CRT](Coding-Guidelines/HybridCRT.md)
-- Languages (This list is non-exhaustive; new guidelines for languages will be added over time)
-  - [C++](Coding-Guidelines/Languages-CPP.md)
-  - [Markdown](Coding-Guidelines/Languages-Markdown.md)
-- [Self-Contained](Coding-Guidelines/SelfContained.md)
-- WinRT
-  - [Registration](Coding-Guidelines/WinRT-Registration.md)
