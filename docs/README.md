@@ -44,7 +44,7 @@ Windows App SDK APIs provide "polyfill" implementations of APIs when necessary s
 app can run on more versions of Windows without additional "is this Windows 10 Creator's
 Release?" checks.
 
-![Converged APIs](images/converged-apis-image.png)
+<img src="./images/converged-apis.png" width="700" alt="WASDK converged API concept" />
 
 Converged API documentation also includes ways to find uses of the "un converged" code
 in your project, along with guidance on how to move from common code patterns to the
@@ -72,7 +72,7 @@ deployment and isolation technologies. Windows App SDK handles the brokering of 
 access from a low integrity-level (low-IL) or AppContainer process so your app can
 reference user resources while respecting user choice & privacy controls.
 
-![Converged APIs](images/converged-apis-image-2.png)
+<img src="./images/converged-apis-2.png" width="400" alt="WASDK converged API concept 2" />
 
 ## Subset API Family
 
