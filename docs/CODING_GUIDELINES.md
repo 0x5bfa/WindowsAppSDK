@@ -17,6 +17,9 @@ languages used in implementation or testing.
 - **DON'T** use WIL's `LOG_HR()` to report non-failure information. `LOG_HR()` will `FAIL_FAST` if handled a `SUCCEEDED(hr)`.
 - **DON'T** define error `HRESULT`s to pass to `LOG_HR()` to report non-failure information. Non-error information should be reported via `TraceLoggingWrite()`.
 
+## C++ coding convention
+
+
 ## Create an experimental API
 
 
